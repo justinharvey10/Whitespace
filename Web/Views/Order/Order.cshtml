@@ -1,0 +1,21 @@
+﻿@using Api.Models
+@model List<OrderSummary>
+<h1>Your Orders</h1>
+<table>
+    <tr>
+        <td class="px-2 font-weight-bold">Order Ref</td>
+        <td class="px-2 font-weight-bold">Total Value</td>
+        <td class="px-2 font-weight-bold"></td>
+    </tr>
+    @foreach (OrderSummary order in Model)
+    {
+        <tr>
+            <td class="px-2">@order.OrderRef</td>
+            <td class="px-2">@order.TotalValue</td>
+            <td class="px-2">@Html.ActionLink("Details", "OrderDetails", new { orderRef = order.OrderRef })</td>
+        </tr>
+
+    }
+</table>
+
+

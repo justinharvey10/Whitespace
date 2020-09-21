@@ -1,0 +1,30 @@
+﻿@using Api.Models
+@model List<OrderItemDetail>
+<h1>Your Order Details</h1>
+<p>Order details for order @ViewBag.OrderRef </p>
+
+<table>
+        <tr>
+            <td class="px-2 font-weight-bold">Product Code</td>
+            <td class="px-2 font-weight-bold">Description</td>
+            <td class="px-2 font-weight-bold">Cost</td>
+            <td class="px-2 font-weight-bold">Quantity</td>
+            <td class="px-2 font-weight-bold">Line Cost</td>
+        </tr>
+
+        @foreach (var orderItem in Model)
+        {
+            <tr>
+                <td class="px-2">@orderItem.ProductCode</td>
+       
+                <td class="px-2">@orderItem.Description</td>
+      
+                <td class="px-2">@orderItem.Cost</td>
+      
+                <td class="px-2">@orderItem.Quantity</td>
+     
+                <td class="px-2">@orderItem.LineCost</td>
+            </tr>
+        }
+
+</table>

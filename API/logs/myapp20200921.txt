@@ -1,0 +1,172 @@
+2020-09-21 09:10:39.637 +01:00 [DBG] Hosting starting
+2020-09-21 09:10:40.773 +01:00 [DBG] Loaded hosting startup assembly API
+2020-09-21 09:10:40.776 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-21 09:10:40.776 +01:00 [INF] Hosting environment: Development
+2020-09-21 09:10:40.776 +01:00 [INF] Content root path: C:\Users\Justin\source\repos\WhitespaceMVC\API
+2020-09-21 09:10:40.776 +01:00 [DBG] Hosting started
+2020-09-21 09:10:41.227 +01:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/  
+2020-09-21 09:10:41.244 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2020-09-21 09:10:41.305 +01:00 [DBG] No candidates found for the request path '/'
+2020-09-21 09:10:41.305 +01:00 [DBG] Request did not match any endpoints
+2020-09-21 09:10:41.413 +01:00 [INF] Request finished in 200.5844ms 404 
+2020-09-21 09:29:05.108 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44347/api/Order/GetOrders  
+2020-09-21 09:29:05.320 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Order/GetOrders'
+2020-09-21 09:29:05.374 +01:00 [DBG] Endpoint 'API.Controllers.OrderController.GetOrders (API)' with route pattern 'api/Order/GetOrders' is valid for the request path '/api/Order/GetOrders'
+2020-09-21 09:29:05.389 +01:00 [DBG] Request matched endpoint 'API.Controllers.OrderController.GetOrders (API)'
+2020-09-21 09:29:05.399 +01:00 [INF] Executing endpoint 'API.Controllers.OrderController.GetOrders (API)'
+2020-09-21 09:29:05.466 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+2020-09-21 09:29:05.688 +01:00 [INF] Route matched with {action = "GetOrders", controller = "Order"}. Executing controller action with signature System.Collections.Generic.List`1[Api.Models.OrderSummary] GetOrders() on controller API.Controllers.OrderController (API).
+2020-09-21 09:29:05.695 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-09-21 09:29:05.695 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-09-21 09:29:05.696 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-09-21 09:29:05.697 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-09-21 09:29:05.697 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-09-21 09:29:05.699 +01:00 [DBG] Executing controller factory for controller API.Controllers.OrderController (API)
+2020-09-21 09:29:05.747 +01:00 [DBG] Executed controller factory for controller API.Controllers.OrderController (API)
+2020-09-21 09:29:05.758 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-09-21 09:29:05.760 +01:00 [DBG] No information found on request to perform content negotiation.
+2020-09-21 09:29:05.760 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-09-21 09:29:05.760 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-09-21 09:29:05.761 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2020-09-21 09:29:05.762 +01:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Api.Models.OrderSummary, Api.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-21 09:29:05.851 +01:00 [INF] Executed action API.Controllers.OrderController.GetOrders (API) in 126.304ms
+2020-09-21 09:29:05.852 +01:00 [INF] Executed endpoint 'API.Controllers.OrderController.GetOrders (API)'
+2020-09-21 09:29:05.864 +01:00 [INF] Request finished in 772.748ms 200 application/json; charset=utf-8
+2020-09-21 09:29:16.490 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44347/api/Order/GetOrderItems/ABC123  
+2020-09-21 09:29:16.495 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Order/GetOrderItems/ABC123'
+2020-09-21 09:29:16.496 +01:00 [DBG] Endpoint 'API.Controllers.OrderController.GetOrderItems (API)' with route pattern 'api/Order/GetOrderItems/{orderRef}' is valid for the request path '/api/Order/GetOrderItems/ABC123'
+2020-09-21 09:29:16.496 +01:00 [DBG] Request matched endpoint 'API.Controllers.OrderController.GetOrderItems (API)'
+2020-09-21 09:29:16.496 +01:00 [INF] Executing endpoint 'API.Controllers.OrderController.GetOrderItems (API)'
+2020-09-21 09:29:16.535 +01:00 [INF] Route matched with {action = "GetOrderItems", controller = "Order"}. Executing controller action with signature System.Collections.Generic.List`1[Api.Models.OrderItemDetail] GetOrderItems(System.String) on controller API.Controllers.OrderController (API).
+2020-09-21 09:29:16.536 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-09-21 09:29:16.536 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-09-21 09:29:16.536 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-09-21 09:29:16.536 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-09-21 09:29:16.536 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-09-21 09:29:16.537 +01:00 [DBG] Executing controller factory for controller API.Controllers.OrderController (API)
+2020-09-21 09:29:16.537 +01:00 [DBG] Executed controller factory for controller API.Controllers.OrderController (API)
+2020-09-21 09:29:16.559 +01:00 [DBG] Attempting to bind parameter 'orderRef' of type 'System.String' ...
+2020-09-21 09:29:16.569 +01:00 [DBG] Attempting to bind parameter 'orderRef' of type 'System.String' using the name 'orderRef' in request data ...
+2020-09-21 09:29:16.571 +01:00 [DBG] Done attempting to bind parameter 'orderRef' of type 'System.String'.
+2020-09-21 09:29:16.571 +01:00 [DBG] Done attempting to bind parameter 'orderRef' of type 'System.String'.
+2020-09-21 09:29:16.571 +01:00 [DBG] Attempting to validate the bound parameter 'orderRef' of type 'System.String' ...
+2020-09-21 09:29:16.581 +01:00 [DBG] Done attempting to validate the bound parameter 'orderRef' of type 'System.String'.
+2020-09-21 09:29:16.591 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-09-21 09:29:16.591 +01:00 [DBG] No information found on request to perform content negotiation.
+2020-09-21 09:29:16.592 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-09-21 09:29:16.592 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-09-21 09:29:16.592 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2020-09-21 09:29:16.592 +01:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Api.Models.OrderItemDetail, Api.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-21 09:29:16.606 +01:00 [INF] Executed action API.Controllers.OrderController.GetOrderItems (API) in 69.6369ms
+2020-09-21 09:29:16.607 +01:00 [INF] Executed endpoint 'API.Controllers.OrderController.GetOrderItems (API)'
+2020-09-21 09:29:16.607 +01:00 [INF] Request finished in 117.6464ms 200 application/json; charset=utf-8
+2020-09-21 09:31:42.142 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44347/api/Order/GetOrders  
+2020-09-21 09:31:42.144 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Order/GetOrders'
+2020-09-21 09:31:42.145 +01:00 [DBG] Endpoint 'API.Controllers.OrderController.GetOrders (API)' with route pattern 'api/Order/GetOrders' is valid for the request path '/api/Order/GetOrders'
+2020-09-21 09:31:42.146 +01:00 [DBG] Request matched endpoint 'API.Controllers.OrderController.GetOrders (API)'
+2020-09-21 09:31:42.147 +01:00 [INF] Executing endpoint 'API.Controllers.OrderController.GetOrders (API)'
+2020-09-21 09:31:42.148 +01:00 [INF] Route matched with {action = "GetOrders", controller = "Order"}. Executing controller action with signature System.Collections.Generic.List`1[Api.Models.OrderSummary] GetOrders() on controller API.Controllers.OrderController (API).
+2020-09-21 09:31:42.149 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-09-21 09:31:42.149 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-09-21 09:31:42.150 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-09-21 09:31:42.150 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-09-21 09:31:42.150 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-09-21 09:31:42.150 +01:00 [DBG] Executing controller factory for controller API.Controllers.OrderController (API)
+2020-09-21 09:31:42.151 +01:00 [DBG] Executed controller factory for controller API.Controllers.OrderController (API)
+2020-09-21 09:31:42.152 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-09-21 09:31:42.152 +01:00 [DBG] No information found on request to perform content negotiation.
+2020-09-21 09:31:42.152 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-09-21 09:31:42.152 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-09-21 09:31:42.152 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2020-09-21 09:31:42.152 +01:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Api.Models.OrderSummary, Api.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-21 09:31:42.155 +01:00 [INF] Executed action API.Controllers.OrderController.GetOrders (API) in 5.3592ms
+2020-09-21 09:31:42.156 +01:00 [INF] Executed endpoint 'API.Controllers.OrderController.GetOrders (API)'
+2020-09-21 09:31:42.156 +01:00 [INF] Request finished in 14.6089ms 200 application/json; charset=utf-8
+2020-09-21 09:31:52.629 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44347/api/Order/GetOrders  
+2020-09-21 09:31:52.632 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Order/GetOrders'
+2020-09-21 09:31:52.632 +01:00 [DBG] Endpoint 'API.Controllers.OrderController.GetOrders (API)' with route pattern 'api/Order/GetOrders' is valid for the request path '/api/Order/GetOrders'
+2020-09-21 09:31:52.632 +01:00 [DBG] Request matched endpoint 'API.Controllers.OrderController.GetOrders (API)'
+2020-09-21 09:31:52.633 +01:00 [INF] Executing endpoint 'API.Controllers.OrderController.GetOrders (API)'
+2020-09-21 09:31:52.634 +01:00 [INF] Route matched with {action = "GetOrders", controller = "Order"}. Executing controller action with signature System.Collections.Generic.List`1[Api.Models.OrderSummary] GetOrders() on controller API.Controllers.OrderController (API).
+2020-09-21 09:31:52.635 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-09-21 09:31:52.635 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-09-21 09:31:52.635 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-09-21 09:31:52.635 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-09-21 09:31:52.635 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-09-21 09:31:52.635 +01:00 [DBG] Executing controller factory for controller API.Controllers.OrderController (API)
+2020-09-21 09:31:52.636 +01:00 [DBG] Executed controller factory for controller API.Controllers.OrderController (API)
+2020-09-21 09:31:52.636 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-09-21 09:31:52.636 +01:00 [DBG] No information found on request to perform content negotiation.
+2020-09-21 09:31:52.636 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-09-21 09:31:52.637 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-09-21 09:31:52.637 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2020-09-21 09:31:52.637 +01:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Api.Models.OrderSummary, Api.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-21 09:31:52.640 +01:00 [INF] Executed action API.Controllers.OrderController.GetOrders (API) in 5.1933ms
+2020-09-21 09:31:52.641 +01:00 [INF] Executed endpoint 'API.Controllers.OrderController.GetOrders (API)'
+2020-09-21 09:31:52.641 +01:00 [INF] Request finished in 12.5368ms 200 application/json; charset=utf-8
+2020-09-21 09:33:21.030 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44347/api/Order/GetOrders  
+2020-09-21 09:33:21.031 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Order/GetOrders'
+2020-09-21 09:33:21.032 +01:00 [DBG] Endpoint 'API.Controllers.OrderController.GetOrders (API)' with route pattern 'api/Order/GetOrders' is valid for the request path '/api/Order/GetOrders'
+2020-09-21 09:33:21.032 +01:00 [DBG] Request matched endpoint 'API.Controllers.OrderController.GetOrders (API)'
+2020-09-21 09:33:21.033 +01:00 [INF] Executing endpoint 'API.Controllers.OrderController.GetOrders (API)'
+2020-09-21 09:33:21.034 +01:00 [INF] Route matched with {action = "GetOrders", controller = "Order"}. Executing controller action with signature System.Collections.Generic.List`1[Api.Models.OrderSummary] GetOrders() on controller API.Controllers.OrderController (API).
+2020-09-21 09:33:21.034 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-09-21 09:33:21.035 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-09-21 09:33:21.035 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-09-21 09:33:21.036 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-09-21 09:33:21.036 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-09-21 09:33:21.037 +01:00 [DBG] Executing controller factory for controller API.Controllers.OrderController (API)
+2020-09-21 09:33:21.037 +01:00 [DBG] Executed controller factory for controller API.Controllers.OrderController (API)
+2020-09-21 09:33:21.038 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-09-21 09:33:21.038 +01:00 [DBG] No information found on request to perform content negotiation.
+2020-09-21 09:33:21.039 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-09-21 09:33:21.039 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-09-21 09:33:21.039 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2020-09-21 09:33:21.040 +01:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Api.Models.OrderSummary, Api.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-21 09:33:21.043 +01:00 [INF] Executed action API.Controllers.OrderController.GetOrders (API) in 6.4469ms
+2020-09-21 09:33:21.044 +01:00 [INF] Executed endpoint 'API.Controllers.OrderController.GetOrders (API)'
+2020-09-21 09:33:21.044 +01:00 [INF] Request finished in 38.9994ms 200 application/json; charset=utf-8
+2020-09-21 09:36:02.098 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44347/api/Order/GetOrders  
+2020-09-21 09:36:02.099 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Order/GetOrders'
+2020-09-21 09:36:02.100 +01:00 [DBG] Endpoint 'API.Controllers.OrderController.GetOrders (API)' with route pattern 'api/Order/GetOrders' is valid for the request path '/api/Order/GetOrders'
+2020-09-21 09:36:02.100 +01:00 [DBG] Request matched endpoint 'API.Controllers.OrderController.GetOrders (API)'
+2020-09-21 09:36:02.100 +01:00 [INF] Executing endpoint 'API.Controllers.OrderController.GetOrders (API)'
+2020-09-21 09:36:02.102 +01:00 [INF] Route matched with {action = "GetOrders", controller = "Order"}. Executing controller action with signature System.Collections.Generic.List`1[Api.Models.OrderSummary] GetOrders() on controller API.Controllers.OrderController (API).
+2020-09-21 09:36:02.103 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-09-21 09:36:02.103 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-09-21 09:36:02.103 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-09-21 09:36:02.103 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-09-21 09:36:02.103 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-09-21 09:36:02.103 +01:00 [DBG] Executing controller factory for controller API.Controllers.OrderController (API)
+2020-09-21 09:36:02.104 +01:00 [DBG] Executed controller factory for controller API.Controllers.OrderController (API)
+2020-09-21 09:36:02.105 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-09-21 09:36:02.106 +01:00 [DBG] No information found on request to perform content negotiation.
+2020-09-21 09:36:02.106 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-09-21 09:36:02.106 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-09-21 09:36:02.106 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2020-09-21 09:36:02.106 +01:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Api.Models.OrderSummary, Api.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-21 09:36:02.111 +01:00 [INF] Executed action API.Controllers.OrderController.GetOrders (API) in 7.546ms
+2020-09-21 09:36:02.113 +01:00 [INF] Executed endpoint 'API.Controllers.OrderController.GetOrders (API)'
+2020-09-21 09:36:02.113 +01:00 [INF] Request finished in 16.859ms 200 application/json; charset=utf-8
+2020-09-21 09:39:42.453 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44347/api/Order/GetOrders  
+2020-09-21 09:39:42.454 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Order/GetOrders'
+2020-09-21 09:39:42.454 +01:00 [DBG] Endpoint 'API.Controllers.OrderController.GetOrders (API)' with route pattern 'api/Order/GetOrders' is valid for the request path '/api/Order/GetOrders'
+2020-09-21 09:39:42.454 +01:00 [DBG] Request matched endpoint 'API.Controllers.OrderController.GetOrders (API)'
+2020-09-21 09:39:42.455 +01:00 [INF] Executing endpoint 'API.Controllers.OrderController.GetOrders (API)'
+2020-09-21 09:39:42.456 +01:00 [INF] Route matched with {action = "GetOrders", controller = "Order"}. Executing controller action with signature System.Collections.Generic.List`1[Api.Models.OrderSummary] GetOrders() on controller API.Controllers.OrderController (API).
+2020-09-21 09:39:42.456 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-09-21 09:39:42.457 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-09-21 09:39:42.457 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-09-21 09:39:42.458 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-09-21 09:39:42.458 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-09-21 09:39:42.458 +01:00 [DBG] Executing controller factory for controller API.Controllers.OrderController (API)
+2020-09-21 09:39:42.458 +01:00 [DBG] Executed controller factory for controller API.Controllers.OrderController (API)
+2020-09-21 09:39:42.459 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-09-21 09:39:42.460 +01:00 [DBG] No information found on request to perform content negotiation.
+2020-09-21 09:39:42.460 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-09-21 09:39:42.460 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-09-21 09:39:42.460 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2020-09-21 09:39:42.460 +01:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Api.Models.OrderSummary, Api.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-21 09:39:42.462 +01:00 [INF] Executed action API.Controllers.OrderController.GetOrders (API) in 4.0773ms
+2020-09-21 09:39:42.463 +01:00 [INF] Executed endpoint 'API.Controllers.OrderController.GetOrders (API)'
+2020-09-21 09:39:42.463 +01:00 [INF] Request finished in 14.8042ms 200 application/json; charset=utf-8
